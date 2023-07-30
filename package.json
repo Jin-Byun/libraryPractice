@@ -19,7 +19,8 @@
     "dev": "vitest",
     "test": "vitest run",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "ci": "tsc && vitest run && vite build"
   },
   "devDependencies": {
     "@types/node": "^20.4.5",
