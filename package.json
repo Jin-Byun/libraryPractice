@@ -1,7 +1,7 @@
 {
-  "name": "npm-library",
+  "name": "@jin-byun/npm-library",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.0.1",
   "type": "module",
   "files": [
     "dist"
@@ -20,9 +20,11 @@
     "test": "vitest run",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "ci": "tsc && vitest run && vite build"
+    "ci": "tsc && vitest run && vite build",
+    "release": "pnpm run ci && changeset publish"
   },
   "devDependencies": {
+    "@changesets/cli": "^2.26.2",
     "@types/node": "^20.4.5",
     "typescript": "^5.0.2",
     "vite": "^4.4.5",
