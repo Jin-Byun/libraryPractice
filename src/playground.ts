@@ -11,7 +11,7 @@ const msgBus = createMessageProtocol({
   },
 });
 
-const send = msgBus.createSender(window.postMessage);
+const send = msgBus.createHandler(window.postMessage);
 
 send({
   type: "LOG_IN",

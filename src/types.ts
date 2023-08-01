@@ -7,7 +7,9 @@ export type Prettify<T> = {
 export type EventsConfigToDiscriminatedUnion<
   T extends Record<string, z.ZodRawShape>
 > = {
-  [K in keyof T]: {
-    type: K;
-  } & z.infer<z.ZodObject<T[K]>>;
+  [K in keyof T]: Prettify<
+    {
+      type: K;
+    } & z.infer<z.ZodObject<T[K]>>
+  >;
 }[keyof T];
