@@ -24,6 +24,16 @@
     "ci": "tsc && vitest run && vite build",
     "release": "pnpm run ci && changeset publish"
   },
+  "keywords": [
+    "zod",
+    "typescript"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Jin-Byun/libraryPractice.git"
+  },
+  "homepage": "https://github.com/Jin-Byun/libraryPractice#librarypractice",
+  "bugs": "https://github.com/Jin-Byun/libraryPractice/issues",
   "peerDependencies": {
     "zod": "^3.21.4"
   },
