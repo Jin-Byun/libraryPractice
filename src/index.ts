@@ -1,2 +1,2 @@
-export const isBool = (value: any): value is Boolean =>
-  typeof value === "boolean";
+export * from "./createMessageProtocol";
+export * from "./types";

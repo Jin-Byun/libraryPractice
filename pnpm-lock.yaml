@@ -25,6 +25,9 @@ devDependencies:
   vitest:
     specifier: ^0.33.0
     version: 0.33.0
+  zod:
+    specifier: ^3.21.4
+    version: 3.21.4
 
 packages:
 
@@ -2860,3 +2863,7 @@ packages:
     optionalDependencies:
       commander: 9.5.0
     dev: false
+
+  /zod@3.21.4:
+    resolution: {integrity: sha512-m46AKbrzKVzOzs/DZgVnG5H55N1sv1M8qZU3A8RIKbs3mrACDNeIOeilDymVb2HdmP8uwshOCF4uJ8uM9rCqJw==}
+    dev: true
